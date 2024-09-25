@@ -1,0 +1,17 @@
+---
+title: "First R on Git"
+author: "Sankalp"
+date: "2024-09-25"
+output: html_document
+---
+
+## Wave plot
+
+```{r echo=TRUE}
+x <- seq(0, 20, by = 0.01)
+y <- sin(x)
+sin_df <- data.frame(x = x, y = y)
+head(sin_df, 3)
+plot(sin_df$x, sin_df$y, type = "l", col = "pink", main = "Sine Wave Plot", xlab = "x", ylab = "sin(x)")
+```
+
